@@ -62,6 +62,7 @@ function addTask(e) {
 
     link.className = 'delete-item secondary-content';
     link.innerHTML = '<i class="fa fa-remove"></i>';
+    link.innetHTML = '<i class="fa fa-check"></i>';
 
     li.appendChild(link);
 
@@ -93,7 +94,7 @@ function saveData(task) {
 // DELETE/ITEM
 function removeTask(e) {
     if (e.target.parentElement.classList.contains('delete-item')) {
-        if (confirm('Are you sure want to delete this tasks?')) {
+        if (confirm('Are you sure want to delete this task?')) {
             e.target.parentElement.parentElement.remove();
         }
     }

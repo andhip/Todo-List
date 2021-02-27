@@ -3,41 +3,65 @@
 html,
 body {
   font-family: "Poppins", sans-serif;
-  background-color: whitesmoke;
+  background-color: #363636 !important;
 }
 
 .container {
   margin-top: 3rem;
+  overflow: hidden;
 }
-.main-card .card-content {
-  border-radius: 23px;
+
+.card {
+  border-radius: 30px;
+  background-color: #363636;
+}
+
+.card-content {
+  background-color: #1b1b1b;
+  border-radius: 30px !important;
+  color: #fff;
+}
+
+.card-action {
+  background-color: #1b1b1b !important;
+  margin-top: 12px !important;
+  color: #fff;
+  border-radius: 30px !important;
 }
 
 .card-action h2 {
   font-size: 24px;
   font-weight: 600;
 }
+
 span.card-title {
   font-size: 24px !important;
   font-weight: 600 !important;
 }
 
-input-field {
-  color: #8397d3;
+ul.collection {
+  position: relative;
+  background: #363636 !important;
+  color: #000000;
+  border-radius: 12px;
+  margin-bottom: 1.4rem;
 }
+
+.delete-item {
+  color: #8739f9 !important;
+  cursor: pointer;
+}
+.delete-item:hover {
+  color: #7f34f08e !important;
+}
+
 .btn {
   border-radius: 4px;
-  background-color: #8339f2 !important;
+  background-color: #8739f9 !important;
   margin-left: 11px;
+  transition: all 0.2s ease-in-out;
 }
 .btn:hover {
-  background-color: #8d49f3 !important;
-}
-.clear-tasks {
-  background: #363e4a !important;
-  transition: all 0.3s ease;
-}
-.clear-tasks:hover {
-  background: #2e343f !important;
-  box-shadow: 1px 2px 7px rgba(43, 43, 43, 0.562);
+  background-color: #7f34f0 !important;
+  box-shadow: 1px 3px 8px #8d49f38a;
 }
