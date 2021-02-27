@@ -27,8 +27,7 @@ function takeList() {
         tasks = JSON.parse(localStorage.getItem('tasks'));
     }
 
-    tasks.forEach(function (task) {
-
+    tasks.forEach(function(task) {
         const li = document.createElement('li');
 
         li.className = 'collection-item';
@@ -39,9 +38,9 @@ function takeList() {
 
         link.className = 'delete-item secondary-content';
         link.innerHTML = '<i class="fa fa-remove"></i>';
-
+    
         li.appendChild(link);
-
+    
         taskList.appendChild(li);
 
     });
@@ -98,6 +97,26 @@ function removeTask(e) {
             e.target.parentElement.parentElement.remove();
         }
     }
+
+    deleteLocalData(e.target.parentElement.parentElement);
+}
+
+function deleteLocalData(taskItem){
+    let tasks;
+
+    if (localStorage.getItem('tasks') === null) {
+        tasks = [];
+    } else {
+        tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
+
+    tasks.forEach(function(task, index){
+        if(taskItem.textContent === task) {
+            tasks.splice(index, 1);
+        }
+    });
+
+    localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 // REMOVE/CLEAR ALL LISTS
@@ -105,6 +124,11 @@ function clearTasks() {
     while (taskList.firstChild) {
         taskList.removeChild(taskList.firstChild);
     }
+    clearAllData();
+}
+
+function clearAllData(){
+    localStorage.clear();
 }
 
 // FILTER

@@ -27,17 +27,17 @@ input-field {
 }
 .btn {
   border-radius: 4px;
-  background-color: #8339f2;
+  background-color: #8339f2 !important;
   margin-left: 11px;
 }
 .btn:hover {
-  background-color: #8d49f3;
+  background-color: #8d49f3 !important;
 }
 .clear-tasks {
-  background: #363e4a;
+  background: #363e4a !important;
   transition: all 0.3s ease;
 }
 .clear-tasks:hover {
-  background: #2d333d;
-  box-shadow: 1px 2px 7px rgba(43, 43, 43, 0.452);
+  background: #2e343f !important;
+  box-shadow: 1px 2px 7px rgba(43, 43, 43, 0.562);
 }
