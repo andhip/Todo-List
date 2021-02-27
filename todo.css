@@ -2,7 +2,7 @@
 
 html,
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   background-color: #363636 !important;
 }
 
@@ -37,6 +37,37 @@ body {
 span.card-title {
   font-size: 24px !important;
   font-weight: 600 !important;
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.25px;
+}
+
+.card-header {
+  background-color: #1b1b1b;
+  border-radius: 30px;
+  padding-top: 1px;
+  padding-bottom: 9px;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  box-shadow: 1px 4px 12px #00000065;
+}
+h3.title-header {
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 0.25px;
+}
+
+#task {
+  color: #fff;
+  font-weight: 600;
+}
+#filter {
+  color: #fff;
+  font-weight: 600;
+}
+label {
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 ul.collection {
@@ -44,7 +75,7 @@ ul.collection {
   background: #363636 !important;
   color: #000000;
   border-radius: 12px;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
 }
 
 .delete-item {
@@ -52,16 +83,18 @@ ul.collection {
   cursor: pointer;
 }
 .delete-item:hover {
-  color: #7f34f08e !important;
+  color: #f034e7de !important;
 }
 
 .btn {
   border-radius: 4px;
   background-color: #8739f9 !important;
   margin-left: 11px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif !important;
   transition: all 0.2s ease-in-out;
 }
 .btn:hover {
   background-color: #7f34f0 !important;
-  box-shadow: 1px 3px 8px #8d49f38a;
+  box-shadow: 1px 3px 8px #8d49f371;
 }
