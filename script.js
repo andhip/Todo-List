@@ -63,7 +63,6 @@ function addTask(e) {
 
     link.className = 'delete-item secondary-content';
     link.innerHTML = '<i class="fa fa-remove"></i>';
-    link.innetHTML = '<i class="fa fa-check"></i>';
 
     li.appendChild(link);
 
